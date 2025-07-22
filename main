@@ -25,6 +25,9 @@ public:
     void cambiarPosicion (int &posicion, int nuevaPos){
         posicion += nuevaPos;
     }
+
+    void jugarTurno(){
+}
 };
 
 class Personaje :
