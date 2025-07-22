@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+
+class Jugador{
+protected:
+    //falta color
+    string nombre;
+    int posicion;
+    tablero* tablero; //falta crear
+public:
+    int tirarDados(){
+
+        static bool primeraVez = true;
+        if (primeraVez) {
+            srand(time(nullptr));
+            primeraVez = false;
+        }
+
+        int nuevaPos = 1 + rand() % 6;
+        return nuevaPos;
+    }
+
+    void cambiarPosicion (int &posicion, int nuevaPos){
+        posicion += nuevaPos;
+    }
+};
+
+class Personaje :
+using namespace std;
+
+int main()
+{
+    cout << "Hello World!" << endl;
+    return 0;
+}
